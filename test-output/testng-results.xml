@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-26T23:26:15 IST" name="Default suite" finished-at="2024-10-26T23:26:52 IST" duration-ms="36834">
+    <groups>
+    </groups>
+    <test started-at="2024-10-26T23:26:15 IST" name="Default test" finished-at="2024-10-26T23:26:52 IST" duration-ms="36834">
+      <class name="gjha123.seleniumframework.BookingFlights">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.BookingFlights@2eae8e6e]" started-at="2024-10-26T23:26:15 IST" name="launchApplication" finished-at="2024-10-26T23:26:17 IST" duration-ms="2010" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="searchFlightwithInvalidData()[pri:1, instance:gjha123.seleniumframework.BookingFlights@2eae8e6e]" started-at="2024-10-26T23:26:17 IST" name="searchFlightwithInvalidData" finished-at="2024-10-26T23:26:22 IST" duration-ms="4660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchFlightwithInvalidData -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.BookingFlights@2eae8e6e]" started-at="2024-10-26T23:26:22 IST" name="launchApplication" finished-at="2024-10-26T23:26:30 IST" duration-ms="8702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="bookingFlightWithHotels()[pri:2, instance:gjha123.seleniumframework.BookingFlights@2eae8e6e]" started-at="2024-10-26T23:26:30 IST" name="bookingFlightWithHotels" finished-at="2024-10-26T23:26:52 IST" duration-ms="21423" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingFlightWithHotels -->
+      </class> <!-- gjha123.seleniumframework.BookingFlights -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
