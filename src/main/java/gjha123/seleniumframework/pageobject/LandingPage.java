@@ -1,4 +1,5 @@
 package gjha123.seleniumframework.pageobject;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,6 +31,8 @@ public class LandingPage extends  AbstractComponenets{
 		//setImplicitWait(20);
 		hotelsLink.click();
 	}
+	
+	By errormsg=By.xpath("//div[@class='feaba1002a']");
 
 	public void goToBookingPage() {
 		//Close PopUp
@@ -38,6 +41,7 @@ public class LandingPage extends  AbstractComponenets{
 	
 	public void clickSearchButton() {
 		searchButton.click();
+		waitForelementToBeVisibile(errormsg);
 	}
 	
 	public String getEnterDestinationErrorMessage() {

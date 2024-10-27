@@ -1,0 +1,8 @@
+<!-- MasterSuite.xml -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="MasterSuite">
+    <suite-files>
+        <suite-file path="testng_positivetestcase.xml"/>
+        <suite-file path="testng_negativetestcase.xml"/>
+    </suite-files>
+</suite>

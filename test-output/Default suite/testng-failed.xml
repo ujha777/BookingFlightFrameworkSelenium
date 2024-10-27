@@ -5,9 +5,9 @@
     <classes>
       <class name="gjha123.seleniumframework.BookingFlights">
         <methods>
-          <include name="searchFlightwithInvalidData"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
+          <include name="searchFlightwithemptyData"/>
         </methods>
       </class> <!-- gjha123.seleniumframework.BookingFlights -->
     </classes>
