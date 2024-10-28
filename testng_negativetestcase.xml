@@ -4,9 +4,14 @@
   <test name="Test2">
     
     <classes>
-      <class name="gjha123.seleniumframework.BookingFlights">
+      <!--<class name="gjha123.seleniumframework.BookingFlights">
         <methods>
 			    <include name="searchFlightwithemptyData"/>
+        </methods>
+      </class>-->
+     <class name="gjha123.seleniumframework.SignIn">
+        <methods>
+			    <include name="TC_02_signInWithOutAnyField"/>
         </methods>
       </class>
     </classes>

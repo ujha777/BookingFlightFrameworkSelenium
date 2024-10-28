@@ -3,13 +3,12 @@
 <suite name="Failed suite [Suite2]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test2(failed)">
     <classes>
-      <class name="gjha123.seleniumframework.BookingFlights">
+      <class name="gjha123.seleniumframework.SignIn">
         <methods>
-          <include name="tearDown"/>
-          <include name="searchFlightwithemptyData"/>
+          <include name="TC_02_signInWithOutAnyField"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- gjha123.seleniumframework.BookingFlights -->
+      </class> <!-- gjha123.seleniumframework.SignIn -->
     </classes>
   </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite2] -->

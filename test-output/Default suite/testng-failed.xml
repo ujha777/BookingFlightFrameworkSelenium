@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="gjha123.seleniumframework.BookingFlights">
+      <class name="gjha123.seleniumframework.FlightModule">
         <methods>
-          <include name="tearDown"/>
+          <include name="TC_01_searchFlight"/>
           <include name="launchApplication"/>
-          <include name="searchFlightwithemptyData"/>
         </methods>
-      </class> <!-- gjha123.seleniumframework.BookingFlights -->
+      </class> <!-- gjha123.seleniumframework.FlightModule -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

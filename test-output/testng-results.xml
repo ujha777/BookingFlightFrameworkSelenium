@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-27T15:23:06 IST" name="Suite" finished-at="2024-10-27T15:23:25 IST" duration-ms="19351">
+  <suite started-at="2024-10-29T00:43:58 IST" name="Default suite" finished-at="2024-10-29T00:44:24 IST" duration-ms="25487">
     <groups>
-      <group name="smoke">
-        <method signature="BookingFlights.bookingFlightWithHotels()[pri:0, instance:gjha123.seleniumframework.BookingFlights@8c3619e]" name="bookingFlightWithHotels" class="gjha123.seleniumframework.BookingFlights"/>
-      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-10-27T15:23:06 IST" name="Test" finished-at="2024-10-27T15:23:25 IST" duration-ms="19351">
-      <class name="gjha123.seleniumframework.BookingFlights">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.BookingFlights@8c3619e]" started-at="2024-10-27T15:23:06 IST" name="launchApplication" finished-at="2024-10-27T15:23:09 IST" duration-ms="3207" status="PASS">
+    <test started-at="2024-10-29T00:43:58 IST" name="Default test" finished-at="2024-10-29T00:44:24 IST" duration-ms="25487">
+      <class name="gjha123.seleniumframework.FlightModule">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.FlightModule@31c7528f]" started-at="2024-10-29T00:43:58 IST" name="launchApplication" finished-at="2024-10-29T00:44:02 IST" duration-ms="3342" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="bookingFlightWithHotels()[pri:0, instance:gjha123.seleniumframework.BookingFlights@8c3619e]" started-at="2024-10-27T15:23:09 IST" name="bookingFlightWithHotels" description="Search Flight with Valid Data" finished-at="2024-10-27T15:23:25 IST" duration-ms="16017" status="PASS">
+        <test-method signature="TC_01_searchFlight()[pri:0, instance:gjha123.seleniumframework.FlightModule@31c7528f]" started-at="2024-10-29T00:44:02 IST" name="TC_01_searchFlight" finished-at="2024-10-29T00:44:24 IST" duration-ms="22014" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- bookingFlightWithHotels -->
-      </class> <!-- gjha123.seleniumframework.BookingFlights -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
-  <suite started-at="2024-10-27T15:23:30 IST" name="MasterSuite" finished-at="2024-10-27T15:23:30 IST" duration-ms="0">
-    <groups>
-    </groups>
-  </suite> <!-- MasterSuite -->
-  <suite started-at="2024-10-27T15:23:25 IST" name="Suite2" finished-at="2024-10-27T15:23:30 IST" duration-ms="4548">
-    <groups>
-      <group name="sanity">
-        <method signature="BookingFlights.searchFlightwithemptyData()[pri:0, instance:gjha123.seleniumframework.BookingFlights@4f25b795]" name="searchFlightwithemptyData" class="gjha123.seleniumframework.BookingFlights"/>
-      </group> <!-- sanity -->
-    </groups>
-    <test started-at="2024-10-27T15:23:25 IST" name="Test2" finished-at="2024-10-27T15:23:30 IST" duration-ms="4548">
-      <class name="gjha123.seleniumframework.BookingFlights">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.BookingFlights@4f25b795]" started-at="2024-10-27T15:23:25 IST" name="launchApplication" finished-at="2024-10-27T15:23:30 IST" duration-ms="4320" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchApplication -->
-        <test-method signature="searchFlightwithemptyData()[pri:0, instance:gjha123.seleniumframework.BookingFlights@4f25b795]" started-at="2024-10-27T15:23:30 IST" name="searchFlightwithemptyData" description="Search Flight with empty Data" finished-at="2024-10-27T15:23:30 IST" duration-ms="217" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchFlightwithemptyData -->
-      </class> <!-- gjha123.seleniumframework.BookingFlights -->
-    </test> <!-- Test2 -->
-  </suite> <!-- Suite2 -->
+        </test-method> <!-- TC_01_searchFlight -->
+      </class> <!-- gjha123.seleniumframework.FlightModule -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -14,12 +14,15 @@ public class AbstractComponenets {
 	WebDriver driver;
 	Actions actions;
 	LocalDate currentDate = LocalDate.now();
+	String parentWindow;
 	public AbstractComponenets(WebDriver driver) {
 	// TODO Auto-generated constructor stub
 	    this.driver = driver;
 	    this.actions = new Actions(driver);
 	}
-
+	public void setImplicitWait(int timeSec) throws InterruptedException {
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(timeSec));
+    }
 	
 	public void setMiiliImplicitWait(int miiliSec) throws InterruptedException {
         Thread.sleep(miiliSec);
@@ -28,6 +31,11 @@ public class AbstractComponenets {
 	public void waitForelementToBeVisibile(By findby) {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		wait.until(ExpectedConditions.visibilityOfElementLocated((findby)));
+	}
+	
+	public void waitForelementToBeVisibileByWebElement(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait.until(ExpectedConditions.visibilityOfAllElements((element)));
 	}
 	
 	public void reLoadPage() {
@@ -49,6 +57,17 @@ public class AbstractComponenets {
 		LocalDate addedDays = currentDate.plusDays(7);
 		int toDates = addedDays.getDayOfMonth();
 		return toDates;
+	}
+	
+	public void switchToChildWindow() {
+		parentWindow = driver.getWindowHandle();
+		for (String childWindow : driver.getWindowHandles()) {
+			driver.switchTo().window(childWindow);
+		}
+	}
+	
+	public void switchToParentWindow() {
+		driver.switchTo().window(parentWindow);
 	}
 	
 }

@@ -9,6 +9,11 @@
 			    <include name="bookingFlightWithHotels"/>
         </methods>
       </class>
+      <class name="gjha123.seleniumframework.SignIn">
+        <methods>
+                <include name="TC_01_signIn"/>
+        </methods>
+      </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
