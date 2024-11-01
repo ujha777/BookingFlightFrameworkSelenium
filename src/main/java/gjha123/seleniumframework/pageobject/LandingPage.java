@@ -21,6 +21,9 @@ public class LandingPage extends  AbstractComponenets{
 	@FindBy(xpath="//a[@id='packages']")
 	WebElement hotelsLink;
 	
+	@FindBy(xpath="//a[@id='flights']")
+	WebElement flightsLink;
+	
 	@FindBy(xpath="//span[text()='Search']")
 	WebElement searchButton;
 	
@@ -30,6 +33,11 @@ public class LandingPage extends  AbstractComponenets{
 	public void clickHotelsLink() {
 		//setImplicitWait(20);
 		hotelsLink.click();
+	}
+	
+	public void clickFlightsLink() {
+		// setImplicitWait(20);
+		flightsLink.click();
 	}
 	
 	By errormsg=By.xpath("//div[@class='feaba1002a']");

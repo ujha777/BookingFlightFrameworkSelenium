@@ -5,7 +5,7 @@
     <classes>
       <class name="gjha123.seleniumframework.FlightModule">
         <methods>
-          <include name="TC_01_searchFlight"/>
+          <include name="TC_01_searchFlight" invocation-numbers="0"/>
           <include name="launchApplication"/>
         </methods>
       </class> <!-- gjha123.seleniumframework.FlightModule -->

@@ -14,6 +14,11 @@
                 <include name="TC_01_signIn"/>
         </methods>
       </class>
+      <class name="gjha123.seleniumframework.FlightModule">
+        <methods>
+                <include name="TC_01_searchFlight"/>
+        </methods>
+        </class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

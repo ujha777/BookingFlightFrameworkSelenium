@@ -21,7 +21,9 @@ public class BookingFlightwithHotelsPage extends AbstractComponenets {
 	@FindBy(xpath="//button[contains(text(),'Accept all')]")
 	WebElement acceptallpopup;
 
-	@FindBy(xpath="//label[@id=':R1l36dalqmt2mmH1:']")
+	//@FindBy(xpath="//label[@id=':R1l36dalqmt2mmH1:']")
+	@FindBy(xpath="//label[@id=':Rqhj6latbeimmH1:']")
+	//@FindBy(xpath="//label[text()='Destination']")
 	WebElement destination;
 
 	@FindBy(xpath="//li[@id='listbox-option-1']//span[@class='d-10pcgf6']")
@@ -50,6 +52,7 @@ public class BookingFlightwithHotelsPage extends AbstractComponenets {
 	}
 
 	public void enterDestination() {
+		reLoadPage();
 		clickOnActionElement(destination);
 	}
 
