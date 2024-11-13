@@ -29,6 +29,7 @@ public class BookingFlights extends BaseTest {
 	@Severity(SeverityLevel.CRITICAL)
 	public void bookingFlightWithHotels() throws InterruptedException, AWTException {
 		// Navigate to the Hotels section:
+		landingPage.ClosePopUp();
 		landingPage.clickHotelsLink();
 		//Close PopUp
 		BookingFlightwithHotelsPage bookingFlightwithHotelsPage = new BookingFlightwithHotelsPage(driver);

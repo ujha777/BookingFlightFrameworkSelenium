@@ -20,7 +20,7 @@ public class ListofHotelsPage extends AbstractComponenets {
 	List<WebElement> searchResults;
 	
 	public void selectHotel() throws InterruptedException {
-		searchResults.stream().filter(hotel -> hotel.getText().equals("Kamaniiya Petitenget Seminyak")).findFirst().get().click();
+		searchResults.stream().filter(hotel -> hotel.getText().contains("Hotel")).findFirst().get().click();
 		setMiiliImplicitWait(2000);
 	}
 

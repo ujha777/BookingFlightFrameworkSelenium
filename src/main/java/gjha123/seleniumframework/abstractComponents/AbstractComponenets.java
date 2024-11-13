@@ -59,6 +59,9 @@ public class AbstractComponenets {
 	public void clickOnActionElement(WebElement element) {	
 		actions.click(element).build().perform();
 	}
+	public void clickOnActionElementByMovingElement(WebElement element) {	
+		actions.moveToElement(element).click().build().perform();
+	}
 
 	public void clickOnActionElementDropDown(WebElement element) {	
 		actions.click(element).sendKeys("Bali").build().perform();
@@ -102,15 +105,24 @@ public class AbstractComponenets {
 
 	public void scrollBottom() throws AWTException {
 		// Stating the Javascript Executor driver
-//		JavascriptExecutor js = (JavascriptExecutor)driver;
-//		// Scroll to bottom of page
-//		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
-//		driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
+		//		JavascriptExecutor js = (JavascriptExecutor)driver;
+		//		// Scroll to bottom of page
+		//		js.executeScript("window.scrollTo(0, document.body.scrollHeight)");
+		//		driver.findElement(By.cssSelector("body")).sendKeys(Keys.CONTROL, Keys.END);
 		Robot robot = new Robot();
 		robot.keyPress(KeyEvent.VK_CONTROL);
 		robot.keyPress(KeyEvent.VK_END);
 		robot.keyRelease(KeyEvent.VK_END);
 		robot.keyRelease(KeyEvent.VK_CONTROL);
+	}
+
+	public  void scrollBottomPageBySpecificElement(WebElement element){
+		// Stating the Javascript Executor driver
+		JavascriptExecutor js = (JavascriptExecutor)driver;
+		// Scroll to bottom of page
+		js.executeScript("arguments[0].scrollIntoView()",element);
+
+
 	}
 
 
@@ -120,6 +132,21 @@ public class AbstractComponenets {
 		// Scroll to the specific element
 		js.executeScript("arguments[0].scrollIntoView();", element);
 	}
+	
+	public void scrollDownUsingAction() {
+		actions.sendKeys(Keys.PAGE_DOWN).build().perform();
+	}
+	
+	public void AlertAccept() {
+		driver.switchTo().alert().accept();
+	}
+	
+	public void scrollToSpecificElementUsingAction(WebElement element) {
+	
+		actions.sendKeys(Keys.PAGE_DOWN).moveToElement(element).build().perform();
+	}
+	
+	
 
 
 }

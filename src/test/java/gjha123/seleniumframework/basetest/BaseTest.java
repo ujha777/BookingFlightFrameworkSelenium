@@ -1,7 +1,6 @@
 package gjha123.seleniumframework.basetest;
 
 import java.io.FileInputStream;
-import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 import org.openqa.selenium.WebDriver;
@@ -11,16 +10,32 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.safari.SafariDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+
+import gjha123.seleniumframework.datadriventesting.PropertyReadersUtils;
 import gjha123.seleniumframework.pageobject.LandingPage;
 import gjha123.seleniumframework.pageobject.FilghtModules.SearchFlightPage;
 
 public class BaseTest {
+	static Properties prop=new Properties();
+//	public static String DESTINATION;
 	public WebDriver driver;
 	public LandingPage landingPage;
-	public WebDriver initializeDriver() throws IOException {
-		Properties prop=new Properties();
-		prop.load(new FileInputStream(System.getProperty("user.dir")+"//src//main//java//gjha123//seleniumframework//resources//config.properties"));
-		String browser = prop.getProperty("browser");
+	
+//	static {
+//		try {
+//			DESTINATION=prop.getProperty("destination");
+//		} catch (Exception e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//	}
+	public WebDriver initializeDriver() throws Exception {
+//		prop=new Properties();
+//		prop.load(new FileInputStream(System.getProperty("user.dir")+"//src//main//java//gjha123//seleniumframework//resources//config.properties"));
+//		String browser = prop.getProperty("browser");
+		
+		String browser = PropertyReadersUtils.readyKey("browser");
+		
 		if(browser.equalsIgnoreCase("chrome")) {
 			 driver = new ChromeDriver();
 			
@@ -52,7 +67,7 @@ public class BaseTest {
 	}
 
 	@BeforeMethod
-	public LandingPage launchApplication() throws IOException {
+	public LandingPage launchApplication() throws Exception {
 		 driver=initializeDriver();
 		 landingPage = new LandingPage(driver);
 			//landingPage.setImplicitWait(20);
@@ -64,7 +79,7 @@ public class BaseTest {
 	
 //	@AfterMethod
 //	public void tearDown() {
-//		driver.close();
+//		driver.quit();
 //	}
 
 }

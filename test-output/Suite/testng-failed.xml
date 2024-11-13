@@ -3,12 +3,18 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="gjha123.seleniumframework.FlightModule">
+      <class name="gjha123.seleniumframework.SignIn">
         <methods>
-          <include name="TC_01_searchFlight" invocation-numbers="0"/>
+          <include name="launchApplication"/>
+          <include name="TC_01_signIn"/>
+        </methods>
+      </class> <!-- gjha123.seleniumframework.SignIn -->
+      <class name="gjha123.seleniumframework.AttractionModule">
+        <methods>
+          <include name="TC_01_searchAttraction" invocation-numbers="0"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- gjha123.seleniumframework.FlightModule -->
+      </class> <!-- gjha123.seleniumframework.AttractionModule -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

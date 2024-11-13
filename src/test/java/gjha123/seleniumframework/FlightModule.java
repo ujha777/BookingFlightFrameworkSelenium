@@ -39,6 +39,7 @@ public class FlightModule extends BaseTest {
 	@Description("Search Flight")
 	@Severity(SeverityLevel.CRITICAL)
 	public void TC_01_searchFlight(String fn,String ln) throws InterruptedException, AWTException {
+		landingPage.ClosePopUp();
 		landingPage.clickFlightsLink();
 		SearchFlightPage searchFlightPage = new SearchFlightPage(driver);
 		searchFlightPage.clickTripCheckBox();

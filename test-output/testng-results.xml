@@ -1,17 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-02T00:16:01 IST" name="Default suite" finished-at="2024-11-02T00:16:38 IST" duration-ms="37715">
+  <suite started-at="2024-11-13T13:52:50 IST" name="Suite1" finished-at="2024-11-13T13:55:18 IST" duration-ms="148282">
     <groups>
+      <group name="smoke">
+        <method signature="BookingFlights.bookingFlightWithHotels()[pri:0, instance:gjha123.seleniumframework.BookingFlights@7f132176]" name="bookingFlightWithHotels" class="gjha123.seleniumframework.BookingFlights"/>
+        <method signature="SignIn.TC_01_signIn()[pri:0, instance:gjha123.seleniumframework.SignIn@79517588]" name="TC_01_signIn" class="gjha123.seleniumframework.SignIn"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-11-02T00:16:01 IST" name="Default test" finished-at="2024-11-02T00:16:38 IST" duration-ms="37715">
-      <class name="gjha123.seleniumframework.FlightModule">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.FlightModule@7e4204e2]" started-at="2024-11-02T00:16:01 IST" name="launchApplication" finished-at="2024-11-02T00:16:05 IST" duration-ms="3805" status="PASS">
+    <test started-at="2024-11-13T13:52:50 IST" name="Test" finished-at="2024-11-13T13:55:18 IST" duration-ms="148282">
+      <class name="gjha123.seleniumframework.AttractionModule">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.AttractionModule@503ecb24]" started-at="2024-11-13T13:54:19 IST" name="launchApplication" finished-at="2024-11-13T13:54:22 IST" duration-ms="2841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="TC_01_searchFlight(java.lang.String,java.lang.String)[pri:0, instance:gjha123.seleniumframework.FlightModule@7e4204e2]" started-at="2024-11-02T00:16:05 IST" name="TC_01_searchFlight" data-provider="passengerDetails" finished-at="2024-11-02T00:16:38 IST" duration-ms="33223" status="PASS">
+        <test-method signature="TC_01_searchAttraction(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:gjha123.seleniumframework.AttractionModule@503ecb24]" started-at="2024-11-13T13:54:22 IST" name="TC_01_searchAttraction" data-provider="destinationProvider" finished-at="2024-11-13T13:55:18 IST" duration-ms="56035" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[John]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Doe]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[ujha777@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[1234567890]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[Agra]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_searchAttraction -->
+      </class> <!-- gjha123.seleniumframework.AttractionModule -->
+      <class name="gjha123.seleniumframework.BookingFlights">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.BookingFlights@7f132176]" started-at="2024-11-13T13:52:50 IST" name="launchApplication" finished-at="2024-11-13T13:52:53 IST" duration-ms="3300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="bookingFlightWithHotels()[pri:0, instance:gjha123.seleniumframework.BookingFlights@7f132176]" started-at="2024-11-13T13:52:53 IST" name="bookingFlightWithHotels" description="Search Flight with Valid Data" finished-at="2024-11-13T13:53:12 IST" duration-ms="18500" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bookingFlightWithHotels -->
+      </class> <!-- gjha123.seleniumframework.BookingFlights -->
+      <class name="gjha123.seleniumframework.SignIn">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.SignIn@79517588]" started-at="2024-11-13T13:53:12 IST" name="launchApplication" finished-at="2024-11-13T13:53:15 IST" duration-ms="3016" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="TC_01_signIn()[pri:0, instance:gjha123.seleniumframework.SignIn@79517588]" started-at="2024-11-13T13:53:15 IST" name="TC_01_signIn" description="Sign In with Google" finished-at="2024-11-13T13:53:27 IST" duration-ms="12231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_01_signIn -->
+      </class> <!-- gjha123.seleniumframework.SignIn -->
+      <class name="gjha123.seleniumframework.FlightModule">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:gjha123.seleniumframework.FlightModule@403f0a22]" started-at="2024-11-13T13:53:29 IST" name="launchApplication" finished-at="2024-11-13T13:53:33 IST" duration-ms="3872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="TC_01_searchFlight(java.lang.String,java.lang.String)[pri:0, instance:gjha123.seleniumframework.FlightModule@403f0a22]" started-at="2024-11-13T13:53:33 IST" name="TC_01_searchFlight" data-provider="passengerDetails" finished-at="2024-11-13T13:54:19 IST" duration-ms="46446" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -24,10 +85,84 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <span class="Button-module__text___sRRzg">...</span> is not clickable at point (1161, 668). Other element would receive the click: <div class="Frame-module__align-items_center___DCS7Y Frame-module__flex-grow_1___2m7TV Frame-module__flex-direction_column___ms2of">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5dad989b312bf3c12dcc7f0da6e328, clickElement {id=f.6012FECA99D0D7F621379AD236DD336F.d.89D0FDCBF4EA194D2A6BCD2DF6AD0F8F.e.23096}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\gjha0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62135/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5dad989b312bf3c12dcc7f0da6e328)] -> xpath: //span[text()='Close']]
+Session ID: ac5dad989b312bf3c12dcc7f0da6e328]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="Button-module__text___sRRzg">...</span> is not clickable at point (1161, 668). Other element would receive the click: <div class="Frame-module__align-items_center___DCS7Y Frame-module__flex-grow_1___2m7TV Frame-module__flex-direction_column___ms2of">...</div>
+  (Session info: chrome=130.0.6723.117)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ac5dad989b312bf3c12dcc7f0da6e328, clickElement {id=f.6012FECA99D0D7F621379AD236DD336F.d.89D0FDCBF4EA194D2A6BCD2DF6AD0F8F.e.23096}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 130.0.6723.117, chrome: {chromedriverVersion: 130.0.6723.116 (6ac35f94ae3..., userDataDir: C:\Users\gjha0\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62135}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62135/devtoo..., se:cdpVersion: 130.0.6723.117, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (ac5dad989b312bf3c12dcc7f0da6e328)] -> xpath: //span[text()='Close']]
+Session ID: ac5dad989b312bf3c12dcc7f0da6e328
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy19.click(Unknown Source)
+at gjha123.seleniumframework.pageobject.FilghtModules.SeatSelectionPage.getClose(SeatSelectionPage.java:37)
+at gjha123.seleniumframework.FlightModule.TC_01_searchFlight(FlightModule.java:80)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_01_searchFlight -->
       </class> <!-- gjha123.seleniumframework.FlightModule -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite1 -->
 </testng-results>
